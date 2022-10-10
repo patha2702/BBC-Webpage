@@ -1,0 +1,140 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+.white_text{
+  color: white;
+}
+header{
+  height: 30px;
+  background-color: black;
+}
+
+ul li{
+  list-style: none;
+}
+li > a{
+  color: white;
+  text-decoration: none;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header > nav *{
+  float: left;
+  margin: 0 7px 0 7px;
+  padding-top: 2px;
+}
+
+.introduction *{
+  display: inline-block;
+}
+
+h1 + h2{
+  float: right;
+}
+
+.main_section > *{
+  float: left;
+  width: 48%;
+  height: 320px;
+  margin: 7px;
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+
+.main_section > main + section > section{
+  float: left;
+  width: 48%;
+  height: 155px;
+}
+
+.secondary_section > section{
+  float: left;
+  width: 32%;
+  height: 300px;
+  margin: 3px;
+}
+
+
+
+
+/******************************************
+/* IMAGE STYLES
+/*******************************************/
+
+.flying_trump, .harris_biden, .women_protest{
+  width: 100%;
+  height: 200px;
+}
+
+.bbc_logo{
+  width: 100px;
+  height: 25px;
+}
+
+.sign_in_logo{
+  width: 30px;
+  height: 20px;
+}
+
+.israel_uae_peace_deal{
+  background-image: url("/class10-materials/bbc_image/assets/israel_uae_faceoff.jpg");
+  background-size: cover;
+}
+
+.canada_us_border_tension{
+  background-image: url("/class10-materials/bbc_image/assets/canada-us-flags.jpg");
+  background-size: cover;
+}
+
+.world_vaccination{
+  background-image: url("/class10-materials/bbc_image/assets/vaccination.jpg");
+  margin: 0 0 0 10px;
+  background-size: cover;
+}
+
+.productivity_gyms{
+  background-image: url("/class10-materials/bbc_image/assets/work-gyms.jpg");
+  margin: 10px 10px 0 0;
+  background-size: cover;
+}
+
+.folk_singer_murder{
+  background-image: url("/class10-materials/bbc_image/assets/folk-singer-murder.jpg");
+  margin: 10px 0 0 0;
+  background-size: cover;
+}
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
